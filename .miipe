@@ -1,0 +1,15 @@
+{
+  "project_id": "86ed74aa-3030-4b0e-8520-6c147ab12792",
+  "project_name": "test",
+  "project_path": "/Users/vivekpanjabi/Desktop/Testing-git-flow",
+  "registered_at": "2026-09-01T20:31:48.498848+00:00",
+  "last_synced_at": "2026-09-01T20:31:48.498848+00:00",
+  "snapshot": {
+    "info.md": "098f6bcd4621d373cade4e832627b4f6",
+    "doc1.md": "5d41402abc4b2a76b9719d911017c592",
+    "rule.txt": "2079541453eb7d7526a94a3ce1618100",
+    "README.md": "6e2bb4b8bd15a794e029db1616e64051",
+    "bad_example.py": "e495f863d0c527c0e5b2c5741c067990",
+    "standards.md": "ebad4b48d0921fa9917417ffbc19f5db"
+  }
+}
