@@ -1,9 +1,9 @@
-"""Small main.py with 2 intentional violations."""
+"""Small main.py with intentional standard violations."""
 
 
 def main():
-    x = 10  # VIOLATION: magic number, should be a named constant
-    if x == None:  # VIOLATION: == None instead of is None
+    x = 10
+    if x == None:
         return
     print(x)
 
