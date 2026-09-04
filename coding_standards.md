@@ -1,4 +1,4 @@
-# Coding Rules
+# Coding Standards & Rules
 
 ## General
 - Line length: max 100 chars
@@ -33,15 +33,26 @@
 - No `console.log` in library code — use a logger
 - Arrow functions for callbacks
 
-## Comments
-- Comments explain why, not what
-- No commented-out code
-- TODOs must include owner + issue link
+## Error Handling
+- Handle errors at the right boundary
+- Never swallow exceptions silently
+- Log the error with context before re-raising
 
 ## Functions
 - One responsibility per function
 - Max cyclomatic complexity: 10
 - Max function length: ~50 lines
+- Avoid deep nesting (max 3 levels)
+
+## Comments
+- Comments explain why, not what
+- No commented-out code
+- TODOs must include owner + issue link
+
+## Security
+- Never hardcode secrets or API keys
+- Never log sensitive data
+- Validate all external input
 
 ## Git
 - Conventional Commits: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`
