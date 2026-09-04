@@ -1,7 +1,18 @@
-"""Minimal main script."""
+import random
 
-def main():
-    print("Hello from main")
 
-if __name__ == "__main__":
-    main()
+def calc(x, y):
+    a = x + y
+    b = a * 2
+    try:
+        c = x / y
+    except:
+        c = 0
+    return c + random.randint(1, 100) + b
+
+
+z = 0
+for i in range(1, 11):
+    z += calc(i, 0)
+
+print("done", z)
