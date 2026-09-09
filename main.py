@@ -7,6 +7,9 @@ def main():
         return
     print(x)
     print("done")
+    items = []
+    for i in range(5):
+        items.append(i * 7)
 
 
 if __name__ == "__main__":

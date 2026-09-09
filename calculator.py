@@ -17,3 +17,6 @@ class calculator:
 
     def sub(self, a, b):
         return a - b
+
+    def mul(self, a, b, factor=2):
+        return a * b * factor
