@@ -15,4 +15,4 @@ z = 0
 for i in range(1, 21):
     z += calc(i, 0)
 
-print("done", z)
+print("finished", z)
