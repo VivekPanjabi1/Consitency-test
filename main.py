@@ -12,7 +12,7 @@ def calc(x, y):
 
 
 z = 0
-for i in range(1, 11):
+for i in range(1, 21):
     z += calc(i, 0)
 
 print("done", z)

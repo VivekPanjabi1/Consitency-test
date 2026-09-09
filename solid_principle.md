@@ -1,5 +1,7 @@
 # SOLID Principles
 
+> Core design principles for maintainable object-oriented code.
+
 1. Single Responsibility Principle (SRP): A class should have one, and only one, reason to change.
 2. Open/Closed Principle (OCP): Software entities should be open for extension, but closed for modification.
 3. Liskov Substitution Principle (LSP): Subtypes must be substitutable for their base types.
