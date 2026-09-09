@@ -1,12 +1,13 @@
 import random
 
 
-def calc(x, y):
+def calc(x: int, y: int) -> int:
+    """Add x and y, double the sum, divide x by y, then add a random value."""
     a = x + y
     b = a * 2
     try:
         c = x / y
-    except:
+    except ZeroDivisionError:
         c = 0
     return c + random.randint(1, 100) + b
 
