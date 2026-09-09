@@ -22,6 +22,7 @@ public class OrderService {
         OrderService svc = new OrderService();
         svc.addOrder("A1", 5);
         svc.addOrder("A2", 10);
+        svc.addOrder("A3", 15);
         System.out.println(svc.getTotal());
     }
 }

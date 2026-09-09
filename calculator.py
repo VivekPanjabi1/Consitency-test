@@ -6,7 +6,7 @@ def processData(data, flag=False):
         if item == None:
             continue
         try:
-            result.append(item * 2)
+            result.append(item * 3)
         except:
             pass
     return result

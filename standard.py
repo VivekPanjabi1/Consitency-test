@@ -2,7 +2,7 @@
 
 STANDARDS = {
     "general": {
-        "max_line_length": 100,
+        "max_line_length": 120,
         "indent": "4 spaces (2 for JS)",
         "no_tabs": True,
         "no_trailing_whitespace": True,

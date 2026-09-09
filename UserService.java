@@ -18,6 +18,7 @@ public class UserService {
         UserService svc = new UserService();
         svc.addUser("alice");
         svc.addUser("bob");
+        svc.addUser("charlie");
         System.out.println(svc.getCount());
     }
 }

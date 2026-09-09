@@ -3,9 +3,9 @@ function Add(a, b) {
 }
 
 function getData(items = []) {
-  var result = [];
-  for (var i = 0; i < items.length; i++) {
-    if (items[i] == null) {
+  let result = [];
+  for (let i = 0; i < items.length; i++) {
+    if (items[i] === null) {
       continue;
     }
     result.push(items[i]);

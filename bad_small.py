@@ -13,7 +13,7 @@ def get_data(items=[]):  # VIOLATION: mutable default arg
         if x == None:  # VIOLATION: == None instead of is None
             continue
         try:
-            result.append("%s" % x)  # VIOLATION: %-format instead of f-string
+            result.append(f"{x}")  # fixed: f-string
         except:  # VIOLATION: bare except
             pass
     return result

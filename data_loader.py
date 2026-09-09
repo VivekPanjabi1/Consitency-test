@@ -8,6 +8,8 @@ def FetchData(url, params={}):
         return data["results"]
     except:
         return []
+    finally:
+        pass
 
 class datamanager:
     def save(self, path, content):

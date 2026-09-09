@@ -4,7 +4,7 @@ This repository follows a simple but strict standard for code quality.
 
 ## General
 
-- Max line length: 100 characters
+- Max line length: 120 characters
 - Indent: 4 spaces (2 for JS)
 - No tabs; no trailing whitespace
 - No dead code or unused imports

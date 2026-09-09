@@ -6,6 +6,7 @@ def main():
     if x == None:
         return
     print(x)
+    print("done")
 
 
 if __name__ == "__main__":

@@ -21,7 +21,7 @@ def fetch_items(limit=100, tags=[]):  # VIOLATION: mutable default arg
         if i == None:  # VIOLATION: == None instead of is None
             continue
         try:
-            items.append("item-%d" % i)  # VIOLATION: %-formatting instead of f-string
+            items.append(f"item-{i}")  # fixed: f-string
         except:  # VIOLATION: bare except
             pass
     return items
