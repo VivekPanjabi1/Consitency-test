@@ -23,6 +23,7 @@ public class OrderService {
         svc.addOrder("A1", 5);
         svc.addOrder("A2", 10);
         svc.addOrder("A3", 15);
+        svc.addOrder("A4", 20);
         System.out.println(svc.getTotal());
     }
 }
