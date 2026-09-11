@@ -1,9 +1,9 @@
-function Add(a, b) {
+function add(a, b) {
   return a + b;
 }
 
 function getData(items = []) {
-  let result = [];
+  const result = [];
   for (let i = 0; i < items.length; i++) {
     if (items[i] === null) {
       continue;
@@ -13,4 +13,4 @@ function getData(items = []) {
   return result;
 }
 
-console.log(Add(5, 10));
+console.log(add(5, 10));

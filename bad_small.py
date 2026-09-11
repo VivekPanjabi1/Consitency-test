@@ -1,23 +1,44 @@
-"""Small sample violating the coding standards. Each break is marked '# VIOLATION:'."""
+"""Small sample module for addition and data filtering."""
 
-import os  # VIOLATION: unused import
+from typing import List, Optional
+
+MAX_LIMIT = 100
+DEFAULT_ADDEND = 5
 
 
-def Add(a, b):  # VIOLATION: not snake_case, no type hints, no docstring
+def add(a: int, b: int) -> int:
+    """Add two integers and return the result.
+
+    Args:
+        a: The first operand.
+        b: The second operand.
+
+    Returns:
+        The sum of a and b.
+    """
     return a + b
 
 
-def get_data(items=[]):  # VIOLATION: mutable default arg
-    result = []
+def get_data(items: Optional[List[str]] = None) -> List[str]:
+    """Filter out None values from a list of items.
+
+    Args:
+        items: A list of items to filter.
+
+    Returns:
+        A list with None values removed.
+    """
+    if items is None:
+        items = []
+    result: List[str] = []
     for x in items:
-        if x == None:  # VIOLATION: == None instead of is None
+        if x is None:
             continue
         try:
-            result.append(f"{x}")  # fixed: f-string
-        except:  # VIOLATION: bare except
+            result.append(f"{x}")
+        except (TypeError, ValueError):
             pass
     return result
 
 
-MAX = 100  # VIOLATION: constant not UPPER_SNAKE (should be fine) — actually ok, but used as magic below
-total = Add(5, MAX)  # VIOLATION: magic number 5
+total = add(DEFAULT_ADDEND, MAX_LIMIT)
