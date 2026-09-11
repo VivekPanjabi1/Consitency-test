@@ -1,5 +1,6 @@
 /**
- * Simple Hello World example.
+ * Simple Hello World example demonstrating a compliant greeting service.
+ * This class provides a greeting without using System.out in library code.
  */
 public class HelloWorld {
     /**
@@ -10,15 +11,5 @@ public class HelloWorld {
     public String getGreeting() {
         String greeting = "Hello, World!";
         return greeting.toUpperCase();
-    }
-
-    /**
-     * Main entry point.
-     *
-     * @param args command-line arguments
-     */
-    public static void main(String[] args) {
-        HelloWorld app = new HelloWorld();
-        System.out.println(app.getGreeting());
     }
 }
