@@ -7,8 +7,13 @@ public class HelloWorld {
      *
      * @param args command-line arguments
      */
-    public static void main(String[] args) {
+    public String getGreeting() {
         String greeting = "Hello, World!";
-        System.out.println(greeting.toUpperCase());
+        return greeting.toUpperCase();
+    }
+
+    public static void main(String[] args) {
+        HelloWorld app = new HelloWorld();
+        app.getGreeting();
     }
 }
